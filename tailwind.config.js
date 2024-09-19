@@ -7,77 +7,75 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      greatBlue: {
-        DEFAULT: "#2A669F",
-        50: "#E4F7F8",
-        100: "#CCEEF2",
-        200: "#9CD7E5",
-        300: "#6CB9D8",
-        400: "#3B94CB",
-        500: "#2A669F",
-        600: "#234B83",
-        700: "#1B3366",
-        800: "#14204A",
-        900: "#0C102E",
-      },
-      buttercup: {
-        DEFAULT: "#F59E0B",
-        50: "#FCE4BB",
-        100: "#FBDCA8",
-        200: "#FACD81",
-        300: "#F8BD59",
-        400: "#F7AE32",
-        500: "#F59E0B",
-        600: "#C07C08",
-        700: "#8A5906",
-        800: "#543603",
-        900: "#1E1401",
-        950: "#030200",
-      },
-      blueCharcoal: {
-        DEFAULT: "#021526",
-        50: "#0B75D4",
-        100: "#0A6BC1",
-        200: "#08559A",
-        300: "#064074",
-        400: "#042A4D",
-        500: "#021526",
-        600: "#000000",
-        700: "#000000",
-        800: "#000000",
-        900: "#000000",
-        950: "#000000",
-      },
-      darken: "rgba(0,0,0,0.7)",
-      fadedarken: "rgba(0,0,0,0.6)",
-    },
     extend: {
-      backgroundImage: {
-        "custom-green-gradient":
-          "linear-gradient(292deg, rgba(186,255,228,1) 0%, rgba(255,255,255,1) 100%)",
-        "custom-greenlight-gradient":
-          "linear-gradient(292deg, rgba(52,191,103,1) 0%, rgba(255,255,255,1) 100%)",
-        "custom-greentransparent-gradient":
-          "linear-gradient(172deg, rgba(52,191,103,1) 0%, rgba(82,66,12,0) 100%)",
-        "custom-greentransparent-gradient-t-b":
-          "linear-gradient(346deg, rgba(122,255,171,1) 0%, rgba(241,241,241,0.26094187675070024) 100%)",
-        "custom-light-green-to-white":
-          "linear-gradient(172deg, rgba(122,255,171,1) 0%, rgba(255,210,56,0.26094187675070024) 100%)",
-        "custom-white-with-light-green-edges":
-          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(186,255,228,0.4) 70%, rgba(186,255,228,1) 100%)",
-        "custom-light-yellow-to-light-green":
-          "linear-gradient(180deg, rgba(255,255,204,1) 0%, rgba(186,255,228,1) 100%)",
-        "custom-light-green-to-light-yellow-center":
-          "linear-gradient(180deg, rgba(186,255,228,1) 0%, rgba(255,255,204,1) 50%, rgba(186,255,228,1) 100%)",
-        "custom-light-yellow-to-transparent-green":
-          "linear-gradient(180deg, rgba(255,255,204,1) 0%, rgba(186,255,228,0) 100%)",
-        "custom-diagonal-light-yellow-to-light-blue":
-          "linear-gradient(135deg, rgba(255,255,204,1) 0%, rgba(137,180,250,1) 100%)", // Updated colors here
-        "custom-light-green-to-light-yellow-soft":
-          "linear-gradient(180deg, rgba(186,255,228,1) 0%, rgba(255,255,204,0.7) 100%)",
+      colors: {
+        primary: {
+          DEFAULT: '#F5F5F5',
+          50: '#FFFFFF',
+          100: '#FFFFFF',
+          200: '#FFFFFF',
+          300: '#FFFFFF',
+          400: '#FFFFFF',
+          500: '#F5F5F5',
+          600: '#D9D9D9',
+          700: '#BDBDBD',
+          800: '#A1A1A1',
+          900: '#858585',
+          950: '#777777',
+        },
+        secondary: {
+          DEFAULT: '#2A669F',
+          50: '#E4F7F8',
+          100: '#CCEEF2',
+          200: '#9CD7E5',
+          300: '#6CB9D8',
+          400: '#3B94CB',
+          500: '#2A669F',
+          600: '#234B83',
+          700: '#1B3366',
+          800: '#14204A',
+          900: '#0C102E',
+        },
+        tertiary: {
+          DEFAULT: '#33372C',
+          50: '#919A81',
+          100: '#879175',
+          200: '#727B62',
+          300: '#5D6450',
+          400: '#484E3E',
+          500: '#33372C',
+          600: '#161813',
+          700: '#000000',
+          800: '#000000',
+          900: '#000000',
+          950: '#000000',
+        },
       },
-      boxshadow: {
+      backgroundImage: {
+        "custom-black-blue-gradient":
+          "linear-gradient(292deg, rgba(0,0,0,1) 0%, rgba(0,0,255,1) 100%)",
+        "custom-blacklight-blue-gradient":
+          "linear-gradient(292deg, rgba(0,0,0,1) 0%, rgba(100,149,237,1) 100%)",
+        "custom-blacktransparent-blue-gradient":
+          "linear-gradient(172deg, rgba(0,0,0,1) 0%, rgba(0,0,255,0) 100%)",
+        "custom-blacktransparent-blue-gradient-t-b":
+          "linear-gradient(346deg, rgba(0,0,0,1) 0%, rgba(0,0,255,0.3) 100%)",
+        "custom-light-black-to-blue":
+          "linear-gradient(172deg, rgba(55,55,55,1) 0%, rgba(0,0,255,0.3) 100%)",
+        "custom-white-with-black-edges":
+          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,1) 100%)",
+        "custom-light-blue-to-black":
+          "linear-gradient(180deg, rgba(173,216,230,1) 0%, rgba(0,0,0,1) 100%)",
+        "custom-light-black-to-light-blue-center":
+          "linear-gradient(180deg, rgba(55,55,55,1) 0%, rgba(173,216,230,1) 50%, rgba(55,55,55,1) 100%)", 
+        "custom-light-blue-to-transparent-black":
+          "linear-gradient(180deg, rgba(173,216,230,1) 0%, rgba(0,0,0,0) 100%)",
+        "custom-diagonal-light-blue-to-black":
+          "linear-gradient(135deg, rgba(173,216,230,1) 0%, rgba(0,0,0,1) 100%)",
+        "custom-light-black-to-light-blue-soft":
+          "linear-gradient(180deg, rgba(55,55,55,1) 0%, rgba(173,216,230,0.7) 100%)",
+      },
+      boxShadow: {
         "3xl": "-1px 34px 47px -29px rgba(137,180,250,1)",
         "4xl": "0vw 0vw 0.5vw 0vw rgba(137,180,250,0.2)",
         "5xl": "0vw 0.5vw 0.5vw 0vw rgba(137,180,250,0.16)",
@@ -85,6 +83,18 @@ export default {
         "glass-card": "4px 4px 4px 4px rgba(137,180,250,0.37)",
         "card-shadow": "0 8px 32px 0 rgba(137,180,250,0.37)",
         "dark-shadow": "10px 10px 5px 0px rgba(137,180,250,0.75)",
+      },
+      colors: {
+        darken: "rgba(0,0,0,0.7)",
+        fadedarken: "rgba(0,0,0,0.6)",
+      },
+      fontFamily: {
+        Roboto: ['Roboto', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
+        Varela: ['Varela Round', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
+        Rubik: ['Rubik', 'sans-serif'],
+        TitilliumWeb: ['Titillium Web', 'sans-serif'],
       },
     },
   },

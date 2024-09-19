@@ -1,3 +1,4 @@
+import Header from "@/components/layouts/header/Header";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 
@@ -8,8 +9,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body>
+    <html lang="en">
+      <body className="font-Poppins bg-blueCharcoal-600">
+        <Header />
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>

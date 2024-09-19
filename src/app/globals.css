@@ -1,24 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;500;600;700&family=Varela+Round&family=Inter:wght@400;700&family=Rubik:wght@400;700&family=Titillium+Web:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-#root,
-.app {
-  height: 100%;
-  width: 100%;
-}
-
 @layer base {
-  html, body, #root, .app {
-    @apply bg-black text-cyan-400;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root,
+  .app {
+    height: 100%;
+    width: 100%;
   }
 }
-
