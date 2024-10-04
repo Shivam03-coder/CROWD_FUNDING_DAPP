@@ -1,4 +1,4 @@
-import Header from "@/components/layouts/header/Header";
+import Header from "@/components/header";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 
